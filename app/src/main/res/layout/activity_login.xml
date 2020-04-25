@@ -18,16 +18,24 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/linearLayout"
-            android:layout_marginTop="26dp"
-            android:background="#0091EA"
-            android:text="User Login"
+            android:layout_marginTop="30dp"
+            android:text="LOGIN"
+            android:textSize="40dp"
+            android:textColor="#1e90ff"
             android:textAlignment="center"
-            android:textColor="#fff"
-            android:textSize="36sp"
-            android:textStyle="normal|bold" />
+            android:fontFamily="monospace"/>
 
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="20px"
+            android:src="@drawable/save" />
     </LinearLayout>
 
     <LinearLayout
@@ -37,77 +45,83 @@
         android:weightSum="1"
         android:layout_below="@+id/linearLayout"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="68dp">
+        android:layout_marginTop="15dp">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/edittext_username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/edittext_password"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="monospace"
-        android:hint="Username"
-        android:inputType="textCapWords"
-        android:textSize="30sp" />
+            <EditText
+                android:id="@+id/edittext_username"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/edittext_password"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="monospace"
+                android:hint="Username"
+                android:inputType="textCapWords"
+                android:textSize="25sp" />
 
-    </android.support.design.widget.TextInputLayout>
+        </android.support.design.widget.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
+        <android.support.design.widget.TextInputLayout
         android:id="@+id/password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     <EditText
         android:id="@+id/edittext_password"
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
         android:hint="Password"
         android:inputType="textPassword"
         style="@style/AppTheme"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:fontFamily="monospace"/>
 
     </android.support.design.widget.TextInputLayout>
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginStart="117dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/custom1"
+            android:text="LOGIN"
+            android:textColor="#FFF"
+            android:fontFamily="monospace"/>
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#0091EA"
-        android:weightSum="1"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="37dp">
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:text="Don't have an account ?" />
 
         <Button
             android:id="@+id/button"
-            android:layout_width="158dp"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="117dp"
             android:layout_weight="0.62"
+            android:background="@drawable/custom1"
+            android:onClick="register"
             android:text="Register"
-            android:onClick="register"/>
-
-        <Button
-            android:text="LOGIN"
             android:textColor="#FFF"
-            android:layout_width="165dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:background="?android:attr/selectableItemBackground"
-            android:id="@+id/button2"
-            android:textStyle="normal|bold"/>
+            android:fontFamily="monospace"/>
 
     </LinearLayout>
+
 
 </RelativeLayout>

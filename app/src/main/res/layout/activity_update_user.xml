@@ -21,8 +21,10 @@
 
             <EditText
                 android:id="@+id/etIdU"
-                android:layout_width="match_parent"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="5dp"
                 android:hint="Id User"
                 android:inputType="number"
                 android:focusable="false"
@@ -37,8 +39,10 @@
 
             <EditText
                 android:id="@+id/etNameU2"
-                android:layout_width="match_parent"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="5dp"
                 android:hint="Nama"
                 android:inputType="text"
                 android:maxLength="20"/>
@@ -52,8 +56,10 @@
 
             <EditText
                 android:id="@+id/etEmailU2"
-                android:layout_width="match_parent"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="5dp"
                 android:inputType="text"
                 android:hint="Email"
                 android:maxLength="20"/>
@@ -67,8 +73,10 @@
 
             <EditText
                 android:id="@+id/etUsernameU2"
-                android:layout_width="match_parent"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="5dp"
                 android:inputType="text"
                 android:hint="Username"
                 android:maxLength="20"/>
@@ -82,8 +90,10 @@
 
             <EditText
                 android:id="@+id/etPasswordU2"
-                android:layout_width="match_parent"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="5dp"
                 android:inputType="textPassword"
                 android:hint="Password"
                 android:maxLength="20"/>
@@ -91,8 +101,10 @@
         </android.support.design.widget.TextInputLayout>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginBottom="5dp"
             android:orientation="horizontal">
 
             <TextView
@@ -129,8 +141,10 @@
 
             <EditText
                 android:id="@+id/etAddressU2"
-                android:layout_width="match_parent"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="5dp"
                 android:inputType="text"
                 android:hint="Alamat"
                 android:maxLength="50"/>
@@ -144,8 +158,10 @@
 
             <EditText
                 android:id="@+id/etTelpU2"
-                android:layout_width="match_parent"
+                android:layout_width="320dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginBottom="5dp"
                 android:inputType="number"
                 android:hint="No Hp"
                 android:maxLength="12"/>
@@ -155,8 +171,9 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="320dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="40dp"
         android:orientation="horizontal"
         android:weightSum="1"
         android:layout_weight="0.12">
@@ -165,19 +182,27 @@
             android:id="@+id/btnDeleteUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/custom1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_alignEnd="@+id/etAlamat"
             android:layout_alignParentBottom="true"
             android:layout_alignRight="@+id/etAlamat"
             android:layout_weight="0.50"
+            android:textColor="#FFF"
             android:text="Delete" />
 
         <Button
             android:id="@+id/btnUpdateUser"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="@drawable/custom1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
             android:layout_alignLeft="@+id/etAlamat"
             android:layout_alignParentBottom="true"
             android:layout_weight="0.50"
+            android:textColor="#FFF"
             android:text="Update" />
 
     </LinearLayout>

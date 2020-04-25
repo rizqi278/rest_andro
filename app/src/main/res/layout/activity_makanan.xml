@@ -11,90 +11,108 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Silahkan Pesan Makanan"
+        android:text="Silahkan Pesan Makanan"
         android:paddingTop="25dp"
         android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:textColor="#1e90ff"
         android:textStyle="bold"
         android:textAlignment="center"
-        android:paddingBottom="35dp"/>
+        android:paddingBottom="12dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="264dp"
+        android:layout_height="118dp"
+        android:layout_weight="0.34"
         android:orientation="vertical"
-        android:weightSum="1"
-        android:layout_weight="0.34">
+        android:weightSum="1">
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/nama"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/editTextName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Nama Makanan"
-        android:inputType="text"
-        android:maxLength="20"/>
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Nama Makanan"
+                android:inputType="text"
+                android:maxLength="20" />
 
-    </android.support.design.widget.TextInputLayout>
+        </android.support.design.widget.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/asal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/asal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editTextAsal"
-        android:hint="Asal Makanan"
-        android:inputType="text"
-        android:maxLength="20"/>
+            <EditText
+                android:id="@+id/editTextAsal"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Asal Makanan"
+                android:inputType="text"
+                android:maxLength="20" />
 
-    </android.support.design.widget.TextInputLayout>
+        </android.support.design.widget.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/harga"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/harga"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editTextHarga"
-        android:hint="Harga Makanan"
-        android:inputType="text"
-        android:maxLength="20"/>
+            <EditText
+                android:id="@+id/editTextHarga"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginBottom="5dp"
+                android:hint="Harga Makanan"
+                android:inputType="text"
+                android:maxLength="20" />
 
-    </android.support.design.widget.TextInputLayout>
+        </android.support.design.widget.TextInputLayout>
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="91dp"
-        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="55dp"
+        android:orientation="vertical"
         android:weightSum="1">
 
         <Button
-            android:id="@+id/buttonBack"
-            android:layout_width="wrap_content"
+            android:id="@+id/buttonAdd"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Kembali" />
+            android:background="@drawable/custom1"
+            android:textColor="#FFF"
+            android:layout_marginBottom="10dp"
+            android:text="Tambah Makanan" />
 
         <Button
             android:id="@+id/buttonView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/custom1"
+            android:textColor="#FFF"
+            android:layout_marginBottom="10dp"
             android:text="Lihat Makanan" />
 
         <Button
-            android:layout_width="wrap_content"
+            android:id="@+id/buttonBack"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tambah Makanan"
-            android:id="@+id/buttonAdd" />
+            android:background="@drawable/custom1"
+            android:textColor="#FFF"
+            android:layout_marginBottom="10dp"
+            android:text="Kembali" />
 
 
     </LinearLayout>
